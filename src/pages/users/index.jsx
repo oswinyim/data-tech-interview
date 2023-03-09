@@ -20,6 +20,7 @@ const Users = () => {
       field: "phone",
       headerName: "Phone Number",
       flex: 1,
+      renderCell: (params) => `+` + params.value.replace(/\D/g, ""),
     },
   ];
 
